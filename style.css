@@ -1,0 +1,142 @@
+body { 
+  font-family: Arial, sans-serif;   
+  margin: 0;   
+  background-color: #FFF8E1 ;
+}  
+
+header {
+  background-color: #8D9B5A;
+  color: white;
+  padding: 0.2em;
+  border: white 5px double;
+  border-radius: 1.4em;
+  position: relative; 
+  margin-top: 1px;
+  margin-bottom: 1em;
+  text-align: center;
+  z-index: 2;
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px;
+}
+
+.card {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #FFA726;
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5em;
+  background-color: #8D9B5A;
+ color: white;
+  margin-left: 1em;
+  margin-top: 1em;
+  border: 5px double white;
+  border-radius: 1.5em;
+  width: 95%;
+  position: relative;
+}
+
+.menu>h3>a{
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+color: white;
+}
+
+span{
+color: white;
+font-size: 2em;
+margin-right: 1em;
+margin-left: 1em;
+}
+
+.select{
+color: brown;
+font-size: 1.5em;
+margin-left: 5%;
+}
+
+.select li{
+color: black;
+padding: 0.3em;
+}
+
+.ingredientes{
+color: green;
+
+}
+
+.container .card .image{
+width: 20em;
+height: 12em;
+object-fit: cover;
+}
+
+.img-portada{
+  width: 95%;
+  margin-top: -20em;
+
+}
+
+.tips{
+  color: black;
+}
+
+.container .card .img{
+  width: 16em;
+  padding-left: 1.4em;
+  margin-top: 0.5em;
+  border-radius: 1em;
+ 
+}
+
+.h3{
+  margin-left: 1em;
+}
+
+.cita{
+  color: green;
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+}
+
+button{
+  font-size: 1.5em;
+  background-color: cadetblue;
+  border: 4px double white;
+  border-radius: 20%;
+  padding: 5px;
+  
+}
+
+button > a{
+  color: white;
+  font-style: italic;
+  text-decoration: none;
+}
