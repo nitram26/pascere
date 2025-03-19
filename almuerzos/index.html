@@ -9,18 +9,32 @@
 <body>
   <header>
     <div class="menu">
-      <h3 class="span"><span > BK Almuerzos </span>
-      <a href="../almuerzos/cremas.html">Cremas y Salsas</a> 
-      <a href="./ensaladas.html">Ensaladas</a> 
-      <a href="./guisos.html">Guisos</a> 
-      <a href="./menestras.html">Menestras</a> 
-      <a href="./pescados.html">Pescados</a> 
-      <a href="./fiedeos.html">Fideos</a> 
-      <a href="./sopas.html">Sopas</a> 
-      <button><a href="../index.html">Inicio</a> </button>
-
+        <h3 class="span"> <span>BK Almuerzos</span></h3>
+        <nav class="menu-desktop">
+            <a href="../almuerzos/cremas.html">Cremas y Salsas</a> 
+            <a href="./ensaladas.html">Ensaladas</a> 
+            <a href="./guisos.html">Guisos</a> 
+            <a href="./menestras.html">Menestras</a> 
+            <a href="./pescados.html">Pescados</a> 
+            <a href="./fideos.html">Fideos</a> 
+            <a href="./sopas.html">Sopas</a> 
+            <button><a href="../index.html">Inicio</a></button>
+        </nav>
+        
+        <!-- Menú desplegable solo en móviles -->
+        <select class="menu-mobile" id="menu-mobile">
+            <option value="">Selecciona una opción</option>
+            <option value="../almuerzos/cremas.html">Cremas y Salsas</option>
+            <option value="./ensaladas.html">Ensaladas</option>
+            <option value="./guisos.html">Guisos</option>
+            <option value="./menestras.html">Menestras</option>
+            <option value="./pescados.html">Pescados</option>
+            <option value="./fideos.html">Fideos</option>
+            <option value="./sopas.html">Sopas</option>
+            <option value="../index.html">Inicio</option>
+        </select>
     </div>
-  </header>
+</header>
     <h2 class="cita">Arroz</h2>
     <div class="container">
       <!-- ///////////////////////////////////////////////// -->
@@ -312,5 +326,13 @@ El pimiento, los mariscos, agregar una taza de caldo de pescado, dejar cocer uno
     <footer>
         <p>&copy; 2025 <i><b>Proyecto Rebeca</b></i> StudioXperto</h3></p>
     </footer>
+    <script>
+      document.getElementById("menu-mobile").addEventListener("change", function () {
+          const url = this.value;
+          if (url) {
+              window.location.href = url;
+          }
+      });
+  </script>
 </body>
 </html>

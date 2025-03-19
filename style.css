@@ -4,19 +4,7 @@ body {
   background-color: #FFF8E1 ;
 }  
 
-header {
-  background-color: #8D9B5A;
-  color: white;
-  padding-right: 0.2em;
-  border: white 5px double;
-  border-radius: 1.4em;
-  position: relative; 
-  margin-top: 1px;
-  margin-bottom: 0.5em;
-  
-  z-index: 2;
 
-}
 
 .container {
   display: flex;
@@ -60,22 +48,13 @@ footer {
   width: 95%;
   position: relative;
 }
-.menu{
-  height: 3em;
-}
 
-.menu>h3>a{
-  text-decoration: none;
-  color: white;
-  padding: 1em;
-color: white;
-}
 
 span{
 color: white;
 font-size: 2em;
-margin-right: 1em;
-margin-left: 1em;
+
+
 }
 
 .select{
@@ -99,11 +78,19 @@ width: 20em;
 height: 12em;
 object-fit: cover;
 }
+.portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Evita que la imagen desborde */
+}
 
-.img-portada{
+.img-portada {
   width: 95%;
-  margin-top: -20em;
-
+  max-height: 90vh; /* Ajusta la altura en pantallas pequeñas */
+  object-fit: cover; /* Evita que la imagen se deforme */
+  border: 6px double green;
+  border-radius: 1em;
 }
 
 .tips{
@@ -152,4 +139,106 @@ font-size: 0.8em;
   margin-left: 1em;
   margin-right: 12em;
 
+}
+
+header {
+  width: 98%;
+  background-color: green;
+  padding: 10px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 5px double white;
+  border-radius: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra los enlaces */
+  align-items: center;
+  gap: 10px; /* Espacio entre los elementos */
+  text-align: center;
+  
+}
+
+.menu h3 {
+  font-size: 18px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  white-space: nowrap; /* Evita que los enlaces se rompan en varias líneas */
+}
+
+.menu button {
+  padding: 5px 10px;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .menu {
+      flex-direction: column;
+      gap: 5px;
+  }
+  .menu h3 {
+      flex-direction: column;
+      font-size: 16px;
+  }
+  .menu a {
+      font-size: 12px;
+      padding: 3px 5px;
+  }
+}
+
+.headerSelect{
+  border: 4px double greenyellow;
+  border-radius: 0.7em;
+  color: brown;
+}
+
+.menu-desktop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu-mobile {
+  display: none; /* Oculto en pantallas grandes */
+  width: 90%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .menu-desktop {
+      display: none; /* Oculta los enlaces en móviles */
+  }
+  .menu-mobile {
+      display: block; /* Muestra el select en móviles */
+  }
+}
+
+.img{
+  width: 1.5em;
+  border: double 5px white;
+  border-radius: 0.5em;
 }
