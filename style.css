@@ -96,6 +96,9 @@ object-fit: cover;
 .tips{
   color: black;
 }
+.tips1{
+  color: blue;
+}
 
 .container .card .img{
   width: 16em;
@@ -129,7 +132,7 @@ button > a{
   color: white;
   font-style: italic;
   text-decoration: none;
-}
+  }
 
 .boton{
   background-color: brown;
