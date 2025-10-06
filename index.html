@@ -27,21 +27,26 @@
       <img src="./media/25años.jpg" alt="25años" class="img-portada" />
     </div>
 
-    <footer>
-      <h4><div class="semana-info" id="semana-info"></div></h4>
-      <p>
-        &copy; 2025
-        <i>
-          <b>Proyecto RESA</b>
+    <!-- ******************************************************** -->
+   <section>
+      <footer class="footer">
+        <h3>
+          &copy; RESA
           <br />
-        </i>
-        Realizado por StudioXperto
-        <br />
-        <br />
-        <button id="info-button" class="boton">SEMANA / DIA</button>
-      </p>
-    </footer>
-    <!-- ********************************* -->
+         <span class="span"> 2016-</span>
+          <span class="span" id="year"></span>
+          <br />
+          Diseñado por:
+          <h5 class="studio">StudioXperto</h5>
+        </h3>
+        <h4><div class="semana-info" id="semana-info"></div></h4> <br>
+        <button id="info-button" class="boton">SEMANA-DIA</button>
+        <script>
+          document.getElementById("year").textContent =
+            new Date().getFullYear();
+        </script>
+      </footer>
+    </section> <br><br><br><br>
     <script src="./JS/numeroDeSemana.js"></script>
   </body>
 </html>

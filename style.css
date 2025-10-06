@@ -36,25 +36,18 @@ body {
   object-fit: cover;
 }
 
-footer {
+
+.footer {
+  border: green double 4px;
+  background-color: antiquewhite;
+  border-radius: 1em;
   text-align: center;
-  padding: 0.5em;
-  background-color: #8D9B5A;
- color: white;
-  margin-left: 1em;
-  margin-top: 1em;
-  border: 5px double white;
-  border-radius: 1.5em;
   width: 95%;
-  position: relative;
 }
 
-
-span{
-color: white;
-font-size: 2em;
-
-
+.span{
+color: black;
+font-size: 1em;
 }
 
 .select{
